@@ -5,22 +5,22 @@
 
 
 def main():
-    size = int(input("Введите n: "))
+    user_input = input().strip()
+    size, step = map(int, user_input.split())
     arr = list(range(1, size+1))
-    step = int(input("Введите m: "))
-    print(arr)
+    #print(arr)
 
     pos = 0
     steps = []
 
     while True:
-        steps.append(arr[pos])
+        #steps.append(arr[pos])
+        print(arr[pos], end="")
         pos = (pos + step-1) % size
-
         if pos == 0:
             break
 
-    print(steps)
+    #print(steps)
 
 if __name__ == "__main__":
     main()

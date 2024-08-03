@@ -19,7 +19,7 @@ def main():
         steps = calculate_steps(arr, target)
         if steps < min_steps:
             min_steps = steps
-    print(f"Минимальное количество шагов: {min_steps}")
+    print(min_steps)
 
 if __name__ == "__main__":
     main()
